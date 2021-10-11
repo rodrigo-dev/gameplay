@@ -7,7 +7,7 @@ import {StatusBar} from 'react-native';
 import {Background} from "./src/components/background"
 
 
-import { Home } from './src/screens/Home';
+import { Routes } from './src/routes';
 
 export default function App() {
 const [FontsLoaded] = useFonts({
@@ -25,7 +25,7 @@ if(!FontsLoaded){
     <StatusBar barStyle='light-content' 
       backgroundColor='transparent'
       translucent/>
-    <Home/>
+    <Routes/>
     </Background>
   );
 }
